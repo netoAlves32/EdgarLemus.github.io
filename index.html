@@ -1,0 +1,72 @@
+<html>
+<head
+<style type="text/css">
+	
+	 body
+            {
+                background-color: #d1d5d4;
+            }
+	
+	* {
+	padding:0px;
+	margin:0px;
+	}
+	
+	#header{
+	margin: left;
+	width:1368px;
+    font-family:Arial, helvetica, sans-serif;	
+	}
+	
+	ul,ol{
+	list-style:none;
+	}
+	
+	.nav li a {
+	background-color:black;
+	color:white;
+	text-decoration:none;
+	padding:10px 15px;
+	display:block;
+	}
+	
+	.nav li a:hover{
+	background-color: #434343;
+	}
+	
+	.nav > li {
+	float:left;
+	}
+	
+	.nav li ul {
+	display:none;
+	position:absolute;
+	min-width:150px;
+	}
+	
+	.nav li:hover > ul{
+	display:block;
+	}
+	
+	.nav li ul li {
+	position:relative;
+	}
+	
+	.nav li ul li ul {
+	right:-140px;
+	top:0px;
+	}
+	
+	</style>
+</head>
+<body>
+<div id="header">
+<ul class="nav">
+<li><a href="">Inicio</a>
+<ul>
+</ul>
+</li>
+</ul>
+</div>
+</body>
+</html>
