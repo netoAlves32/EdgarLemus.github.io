@@ -56,12 +56,33 @@
 	top:0px;
 	}	
 	</style>
+	
+	<script>
+		function hora()
+		{
+			var mihora= new Date();
+			var horas = mihora.getHours().toString();
+			var minutos = mihora.getMinutes().toString;
+			if(minutos.lenght == 1)
+			   {
+				   minutos="0"+minutos;
+			   }
+			var segundos = mihora.getSeconds().toString;
+			if(minutos.lenght == 1)
+			   {
+				   segundos="0"+segundos;
+			   }
+			document.forms[0].mireloj.value = horas+":"+minutos+":"+segundos;
+		}
+	</script>
+	
 </head>
 <body>
 <div id="header">
 <ul class="nav">
 <li><a href=""></a>INICIAR SESIÓN</li>	
 <li><a href=""></a>REGISTRARSE</li>
+	<li><a href=""></a><input type"text" name="mireloj" onclick="hora()"</li>
 </ul>
 </div>
 </body>
