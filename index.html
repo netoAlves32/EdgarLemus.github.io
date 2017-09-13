@@ -55,6 +55,32 @@
 	right:-140px;
 	top:0px;
 	}	
+	
+	@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+
+    body { margin: 0; padding: 0; } 
+    div#slider { overflow: hidden; }
+    div#slider figure img {width: 20%; float: left; }
+    div#slider figure { 
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 30s 
+      slidy infinite; 
+    }
 	</style>
 	
 	<script>
@@ -78,6 +104,15 @@
 	
 </head>
 <body>
+<div id="slider">
+<figure>
+<img src="http://www.fullmatchesandshows.com/wp-content/uploads/2017/02/uefa-champions-league.png" alt>
+<img src="https://3.bp.blogspot.com/-KJ3viiTWZzM/V7-4p0g2rTI/AAAAAAAABXQ/W3p3cTBWV5wLwqEpEs8mnenDtg_yWc5LgCLcB/s1600/Group%2BStage%2BDraw%2BFor%2BChampions%2BLeague.jpg" alt>
+<img src="https://leaguelane.com/wp-content/uploads/2017/09/Shakhtar-Donetsk-vs-Napoli-Champions-League-Predictions-12th-Sep-2017.jpg" alt>
+<img src="https://leaguelane.com/wp-content/uploads/2017/09/RB-Leipzig-vs-Monaco-Champions-League-Predictions-12th-Sep-2017.jpg" alt>
+<img src="http://www.estrelladigital.es/media/estrelladigital/images/2017/09/12/2017091219271024532.jpg" alt>
+</figure>
+</div>
 	<script>
 		var r = setInterval("hora()");
 	</script>
